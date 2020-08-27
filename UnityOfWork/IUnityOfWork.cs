@@ -1,4 +1,4 @@
-﻿namespace DeveloperTi.UnityOfWork.EntityFramework
+﻿namespace DeveloperTi.UnityOfWork
 {
     public interface IUnityOfWork
     {
