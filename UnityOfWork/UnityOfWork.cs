@@ -1,4 +1,6 @@
-﻿namespace DeveloperTi.UnityOfWork
+﻿using System.Threading.Tasks;
+
+namespace DeveloperTi.UnityOfWork
 {
     public class UnityOfWork : IUnityOfWork
     {
@@ -14,9 +16,9 @@
             context.SaveChanges();
         }
 
-        public void CommitAsync()
+        public async Task CommitAsync()
         {
-            context.SaveChangesAsync();
+            await context.SaveChangesAsync();
         }
 
         public void RollBack() { }
