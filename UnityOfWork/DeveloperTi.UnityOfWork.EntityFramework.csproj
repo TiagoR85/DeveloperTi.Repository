@@ -8,9 +8,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DeveloperTi.Repository\DeveloperTi.Repository.csproj" />
-    <ProjectReference Include="..\UnityOfWork\DeveloperTi.UnityOfWork.EntityFramework.csproj" />
-  </ItemGroup>
-
 </Project>

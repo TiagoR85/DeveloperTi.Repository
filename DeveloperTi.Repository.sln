@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperTi.Repository", "D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperTi.Repository.EntityFramework", "DeveloperTi.Repository.EntityFramework\DeveloperTi.Repository.EntityFramework.csproj", "{CC60DF5E-21D8-4651-A2D0-B1A3B3B54437}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperTi.UnityOfWork.EntityFramework", "UnityOfWork\DeveloperTi.UnityOfWork.EntityFramework.csproj", "{86C00753-C7DD-44D9-BEEA-61CE7EAE768F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CC60DF5E-21D8-4651-A2D0-B1A3B3B54437}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC60DF5E-21D8-4651-A2D0-B1A3B3B54437}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC60DF5E-21D8-4651-A2D0-B1A3B3B54437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C00753-C7DD-44D9-BEEA-61CE7EAE768F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C00753-C7DD-44D9-BEEA-61CE7EAE768F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C00753-C7DD-44D9-BEEA-61CE7EAE768F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C00753-C7DD-44D9-BEEA-61CE7EAE768F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

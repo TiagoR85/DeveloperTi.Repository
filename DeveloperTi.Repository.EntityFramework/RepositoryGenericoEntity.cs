@@ -10,22 +10,22 @@ namespace DeveloperTi.Repository.EntityFramework
     public abstract class RepositoryGenericoEntity<TEntidade, TChave> : IRepositoryGeneric<TEntidade, TChave>
         where TEntidade : class
     {
-        private DbContext context;
+        private readonly DbContext context;
+
         public RepositoryGenericoEntity(DbContext context)
         {
             this.context = context;
         }
 
-        public async Task Delete(TEntidade entidade)
+        public void Delete(TEntidade entidade)
         {
             context.Entry(entidade).State = EntityState.Deleted;
-            await SaveChanges();
         }
 
         public async Task DeleteById(TChave id)
         {
             TEntidade entidade = await GetById(id);
-            await Delete(entidade);
+            Delete(entidade);
         }
 
         public async Task<TEntidade> GetById(TChave id)
@@ -33,21 +33,14 @@ namespace DeveloperTi.Repository.EntityFramework
             return await context.Set<TEntidade>().FindAsync(id);
         }
 
-        public async Task Insert(TEntidade entidade)
+        public void Insert(TEntidade entidade)
         {
             context.Set<TEntidade>().Add(entidade);
-            await SaveChanges();
         }
 
-        public async Task Update(TEntidade entidade)
+        public void Update(TEntidade entidade)
         {
             context.Entry(entidade).State = EntityState.Modified;
-            await SaveChanges();
-        }
-
-        public async Task SaveChanges()
-        {
-            await context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<TEntidade>> GetAll(Expression<Func<TEntidade, bool>> where = null)
