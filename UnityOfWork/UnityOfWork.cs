@@ -1,19 +1,19 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DeveloperTi.DataContext.EntityFramework;
 
 namespace DeveloperTi.UnityOfWork.EntityFramework
 {
-    public class UnityOfWork : DbContext, IUnityOfWork
+    public class UnityOfWork : IUnityOfWork
     {
-        private readonly DbContext context;
+        private readonly IDataContext context;
 
-        public UnityOfWork(DbContext context)
+        public UnityOfWork(IDataContext context)
         {
             this.context = context;
         }
 
         public void Commit()
         {
-            context.SaveChangesAsync();
+            context.CommitAsync();
         }
 
         public void RollBack() { }

@@ -8,8 +8,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DeveloperTi.DataContext.EntityFramework\DeveloperTi.DataContext.EntityFramework.csproj" />
-  </ItemGroup>
-
 </Project>
