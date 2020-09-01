@@ -5,6 +5,9 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>DeveloperTi</Authors>
     <Description>DataContext com EF Core 3.1</Description>
+    <RepositoryUrl>https://github.com/TiagoR85/DeveloperTi.Repository/tree/master/DeveloperTi.DataContext.EntityFramework</RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    <PackageProjectUrl>https://github.com/TiagoR85/DeveloperTi.Repository</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

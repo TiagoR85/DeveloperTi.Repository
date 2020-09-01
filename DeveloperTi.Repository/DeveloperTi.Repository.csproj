@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>DeveloperTi</Authors>
+    <Description>Uma abstract class RepositorioGenerico&lt;TEntidade, TChave&gt; where TEntidade : class</Description>
+    <RepositoryUrl>https://github.com/TiagoR85/DeveloperTi.Repository/tree/master/DeveloperTi.Repository</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/TiagoR85/DeveloperTi.Repository</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

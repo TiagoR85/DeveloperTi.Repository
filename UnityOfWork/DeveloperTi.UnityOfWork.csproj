@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>DeveloperTi</Authors>
+    <Description>Implementação Unity of Work em C#</Description>
+    <PackageProjectUrl>https://github.com/TiagoR85/DeveloperTi.Repository</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TiagoR85/DeveloperTi.Repository/tree/master/UnityOfWork</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
