@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>DeveloperTi</Authors>
+    <Description>DataContext com EF Core 3.1</Description>
   </PropertyGroup>
 
   <ItemGroup>
