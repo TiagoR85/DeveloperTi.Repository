@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperTi.Repository", "DeveloperTi.Repository\DeveloperTi.Repository.csproj", "{8FB1245B-751B-4C5A-945A-CF1C59FF6B7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperTi.UnityOfWork", "UnityOfWork\DeveloperTi.UnityOfWork.csproj", "{86C00753-C7DD-44D9-BEEA-61CE7EAE768F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperTi.UnityOfWork", "UnityOfWork\DeveloperTi.UnityOfWork.csproj", "{86C00753-C7DD-44D9-BEEA-61CE7EAE768F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperTi.DataContext.EntityFramework", "DeveloperTi.DataContext.EntityFramework\DeveloperTi.DataContext.EntityFramework.csproj", "{1852FA5B-C363-42C7-98F3-7F4E0B7DD0DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperTi.DataContext.EntityFramework", "DeveloperTi.DataContext.EntityFramework\DeveloperTi.DataContext.EntityFramework.csproj", "{1852FA5B-C363-42C7-98F3-7F4E0B7DD0DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

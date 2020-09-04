@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Threading.Tasks;
 
 namespace DeveloperTi.Repository
 {
@@ -21,15 +20,15 @@ namespace DeveloperTi.Repository
             context.Entry(entidade).State = EntityState.Deleted;
         }
 
-        public async Task DeleteById(TChave id)
+        public void DeleteById(TChave id)
         {
-            TEntidade entidade = await GetById(id);
+            TEntidade entidade = GetById(id);
             Delete(entidade);
         }
 
-        public async Task<TEntidade> GetById(TChave id)
+        public TEntidade GetById(TChave id)
         {
-            return await context.Set<TEntidade>().FindAsync(id);
+            return context.Set<TEntidade>().Find(id);
         }
 
         public void Insert(TEntidade entidade)
@@ -42,10 +41,10 @@ namespace DeveloperTi.Repository
             context.Entry(entidade).State = EntityState.Modified;
         }
 
-        public async Task<IEnumerable<TEntidade>> GetAll(Expression<Func<TEntidade, bool>> where = null)
+        public IEnumerable<TEntidade> GetAll(Expression<Func<TEntidade, bool>> where = null)
         {
-            return where != null ? await context.Set<TEntidade>().Where(where).ToListAsync()
-                                 : await context.Set<TEntidade>().ToListAsync();
+            return where != null ? context.Set<TEntidade>().Where(where).ToList()
+                                 : context.Set<TEntidade>().ToList();
         }
     }
 }
